@@ -1,0 +1,44 @@
+/* Text Preset 1 */
+.text-preset-1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem; /* 56px to rem */
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 1 (Mobile) */
+.text-preset-1-mobile {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem; /* 40px to rem */
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 2 (Bold) */
+.text-preset-2-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem; /* 16px to rem */
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 2 (Regular) */
+.text-preset-2-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 1rem; /* 16px to rem */
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 3 */
+.text-preset-3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem; /* 12px to rem */
+  line-height: 150%;
+  letter-spacing: 0px;
+}

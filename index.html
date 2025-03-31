@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <section class="sign-up-card container">
+      <div id="sign-up-illustration">
+
+          <picture>
+            <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1440px)" width="400" height="593" />
+            <img
+            id="illustration-sign-up-mobile"
+            src="assets/images/illustration-sign-up-mobile.svg"
+              width="375"
+              height="284"
+              alt=""
+            />
+          </picture>
+        
+      </div>
+      <div class="sign-up-content">
+      <div id="sign-up-text">
+        <h1 class="text-preset-1-mobile">Stay updated!</h1>
+        <p class="text-preset-2-regular">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="text-preset-2-regular">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+      </div>
+      <form action="" id="sign-up-form">
+        <label for="email" class="text-preset-3">Email address</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="email@company.com"
+          class="text-preset-2-regular"
+          autocomplete="on"
+          required
+        />
+        <button
+          id="form-submit-btn"
+          class="ax-button btn-style text-preset-2-bold"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </section>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <section class="container hidden">
+      <h1 class="text-preset-1-mobile">Thanks for subscribing!</h1>
+      <p class="text-preset-2">
+        A confirmation email has been sent to
+        <span class="text-preset-2-bold">ash@loremcompany.com</span>. Please
+        open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="text-preset-2 ax-button">Dismiss message</button>
+    </div>
+      <!-- Success message end -->
+    </section>
+  </body>
+</html>

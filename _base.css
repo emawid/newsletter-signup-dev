@@ -1,0 +1,43 @@
+:root {
+  /* colors */
+  --color-white: #ffffff;
+
+  --color-grey: #949494;
+
+  --color-blue-800: #242742;
+  --color-blue-700: #36384d;
+
+  --color-red: #ff6155;
+
+  --color-gradient-start: #ff6a3a;
+  --color-gradient-end: #ff527b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-blue-700);
+}
+
+.ax-button {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', system-ui;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
