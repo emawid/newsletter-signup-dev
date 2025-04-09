@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -45,14 +47,16 @@
         </ul>
       </div>
       <form action="" id="sign-up-form">
+        <div id="form-label-wrapper" class="text-preset-3">
         <label for="email" class="text-preset-3">Email address</label>
+        <span id="error-message" class="hide-error-message">Valid email required</span>
+      </div>
         <input
           id="email"
-          type="email"
+          name="email"
+          type="text"
           placeholder="email@company.com"
           class="text-preset-2-regular"
-          autocomplete="on"
-          required
         />
         <button
           id="form-submit-btn"
@@ -66,15 +70,23 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <section class="container hidden">
-      <h1 class="text-preset-1-mobile">Thanks for subscribing!</h1>
-      <p class="text-preset-2">
-        A confirmation email has been sent to
-        <span class="text-preset-2-bold">ash@loremcompany.com</span>. Please
-        open it and click the button inside to confirm your subscription.
-      </p>
-      <button class="text-preset-2 ax-button">Dismiss message</button>
-    </div>
+    <section id="success" class="container">
+
+      <dialog id="success-dialog">
+        
+        <div id="dialog-wrapper">
+          <div id="dialog-content">
+            <img src="assets/images/icon-success.svg" width="64" height="64" alt="">
+            <h1 class="text-preset-1-mobile">Thanks for subscribing!</h1>
+            <p class="text-preset-2">
+              A confirmation email has been sent to
+              <span id="user-email" class="text-preset-2-bold">ash@loremcompany.com</span>. Please
+              open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button id="success-button" class="text-preset-2 ax-button btn-style">Dismiss message</button>
+        </div>
+      </dialog>
       <!-- Success message end -->
     </section>
   </body>

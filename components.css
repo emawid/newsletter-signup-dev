@@ -1,12 +1,10 @@
+/* 
+se om du kan implemntera p + p nånstans
+*/
+
 .container {
   max-width: 904px;
   margin-inline: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    margin: 73px 80px;
-  }
 }
 
 .sign-up-card {
@@ -69,13 +67,7 @@ ul {
   margin-bottom: 24px;
 }
 
-#sign-up-form input:user-invalid {
-  border: 1px solid var(--color-red);
-  background-color: #ffe7e6;
-  color: var(--color-red);
-}
-
-#form-submit-btn {
+.btn-style {
   padding: 16px 38px;
   background-color: var(--color-blue-800);
   color: var(--color-white);
@@ -83,14 +75,47 @@ ul {
   text-align: center;
 }
 
-#form-submit-btn:hover {
+#sign-up-form:focus-within #form-submit-btn {
   background: linear-gradient(
     90deg,
     var(--color-gradient-start) 0%,
     var(--color-gradient-end) 100%
   );
+}
+
+#form-submit-btn:hover {
   color: var(--color-white);
   cursor: pointer;
+}
+
+#form-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error-message {
+  margin: 0;
+  color: var(--color-red);
+}
+
+.hide-error-message {
+  display: none;
+}
+
+#sign-up-form input:user-invalid {
+  border: 1px solid var(--color-red);
+  background-color: #ffe7e6;
+  color: var(--color-red);
+}
+
+.invalid {
+  border: 1px solid var(--color-red);
+  background-color: #ffe7e6;
+  color: var(--color-red);
+}
+
+#sign-up-form .invalid {
+  border: 1px solid var(--color-red);
 }
 
 @media (max-width: 360px) {
@@ -102,6 +127,10 @@ ul {
 #sign-up-form input:focus {
   outline: none;
   border: 1px solid var(--color-blue-800);
+}
+
+#sign-up-form input:focus:user-invalid {
+  border: 1px solid var(--color-red);
 }
 
 #sign-up-illustration {
@@ -171,5 +200,65 @@ ul {
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+  }
+}
+
+/* Success message */
+
+#dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+::backdrop {
+  background-color: var(--color-white);
+  opacity: 1;
+}
+
+dialog {
+  border: none;
+  padding: 0;
+  /* height: fit-content;
+  width: fit-content; */
+  background-color: transparent;
+}
+
+#dialog-wrapper {
+  padding: 0;
+  height: 623px;
+  max-width: 327px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid red;
+}
+
+#dialog-wrapper p,
+#dialog-wrapper h1 {
+  margin: 0;
+  color: var(--color-blue-800);
+}
+
+#success-button {
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  ::backdrop {
+    background-color: var(--color-blue-800);
+  }
+
+  #dialog-wrapper {
+    max-width: 504px;
+    height: 520px;
+    padding: 64px;
+    border-radius: 36px;
+  }
+
+  #dialog-wrapper h1 {
+    font-size: 56px;
   }
 }
