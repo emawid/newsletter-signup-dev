@@ -4,7 +4,7 @@ se om du kan implemntera p + p nånstans
 
 .container {
   max-width: 904px;
-  margin-inline: auto;
+  margin: auto;
 }
 
 .sign-up-card {
@@ -146,7 +146,7 @@ ul {
 
 @media (min-width: 768px) {
   .sign-up-card {
-    margin: 73px 80px;
+    /* margin: 73px 80px; */
     border-radius: 36px;
   }
 

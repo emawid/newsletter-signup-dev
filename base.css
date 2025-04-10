@@ -32,8 +32,9 @@ body {
   font-family: 'Roboto', system-ui;
   margin: 0;
   display: grid;
+  grid-template-columns: 1fr;
   place-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 input,

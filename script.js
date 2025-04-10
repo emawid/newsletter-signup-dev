@@ -5,6 +5,7 @@ const errorMessage = document.querySelector('#error-message');
 const emailInput = document.querySelector('#email');
 const successButton = document.querySelector('#success-button');
 const showEmail = document.querySelector('#user-email');
+const successSection = document.querySelector('#success');
 
 //Regex for email validation
 
@@ -25,6 +26,7 @@ const updateError = isValid => {
     errorMessage.classList.add('hide-error-message');
     emailInput.classList.remove('invalid');
     document.querySelector('dialog').showModal();
+    successSection.classList.remove('hidden');
   } else {
     errorMessage.classList.remove('hide-error-message');
     emailInput.classList.add('invalid');
@@ -48,6 +50,7 @@ const handleSubmit = event => {
 
 successButton.addEventListener('click', () => {
   document.querySelector('dialog').close();
+  successSection.classList.add('hidden');
 });
 
 form.addEventListener('submit', handleSubmit);
